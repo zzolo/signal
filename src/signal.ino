@@ -31,8 +31,8 @@ int blink_delay = 400;
 int debounce_time = 300;
 
 // State
-bool l_on = false;
-bool r_on = false;
+volatile bool l_on = false;
+volatile bool r_on = false;
 
 // Main setup function
 void setup() {
